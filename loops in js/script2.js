@@ -3,7 +3,6 @@ console.log("LOOP PRACTICE QS");
 console.log("");
 console.log("qno 2");
 // write a program to print the marks of student in an object using for in  loop
-
 const student_marks={
         omaima:89,
         sakina:90,
@@ -32,7 +31,6 @@ console.log("");
 console.log("qno 3");
 // write a program to print try again until the user enter the 
 // correct number
-
  let no="rubi";
 
  
