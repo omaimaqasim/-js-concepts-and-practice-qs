@@ -112,6 +112,7 @@ for (const keys in book) {
 // for...in is bad for arrays because it iterates over property names (keys) as strings,
 //  not the array's actual elements, and can include unexpected inherited properties, leading to bugs.
 // For iterating arrays, always use for...of (for values) or forEach() (for values and indices) instead.
+// we can use for in loop for array but it is not good choice
 
 // EXAMPLE 
 let arr = ["A", "B", "C"]
@@ -146,6 +147,58 @@ for (const name of names) {
 
 }
 console.log("The longest word is:", longestword);
+
+
+// . forEach Loop Question no 8: User Message Display
+// Question: You have an array of users. Use the forEach array 
+// method to iterate over this array. For each user object, log 
+// a formatted message to the console like: "Hello [Name], your 
+// ID is [ID]!".
+
+const users = [
+    { id: 101, name: "zeynen" },
+    { id: 102, name: "zara" },
+    { id: 103, name: "Charlie" },
+    { id: 104, name: "prakash" }
+
+];
+// target id and name just like how you target properties in object as we write objects in array
+
+users.forEach(user => {
+    console.log(`"Hello ${user.name} , your ID is [${user.id}]!"`)
+
+});
+
+
+// test Question 1: FizzBuzz Challenge
+// Scenario: This is a classic coding challenge that tests your 
+// understanding of basic loops and conditional statements.
+// Question: Write a loop that iterates through numbers from 1 to
+//  15. For each number:
+// If the number is divisible by 3, log "Fizz".
+// If the number is divisible by 5, log "Buzz".
+// If the number is divisible by both 3 and 5, log "FizzBuzz".
+// Otherwise, log the number itself.
+
+for (let i = 1; i <= 15; i++) {
+
+   if ((i % 3 === 0 )&&( i % 5 === 0)){
+       console.log("Fizzbuzz")
+    }
+  else  if (i % 3 === 0) {
+         console.log("fizz")
+    }
+     else if (i % 5 === 0){
+       console.log("buzz")
+     }
+
+     else{
+        console.log(i)
+     }
+   
+
+}
+
 
 
 
