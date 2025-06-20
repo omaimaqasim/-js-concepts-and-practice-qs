@@ -170,6 +170,7 @@ users.forEach(user => {
 });
 
 
+
 // test Question 1: FizzBuzz Challenge
 // Scenario: This is a classic coding challenge that tests your 
 // understanding of basic loops and conditional statements.
@@ -182,22 +183,58 @@ users.forEach(user => {
 
 for (let i = 1; i <= 15; i++) {
 
-   if ((i % 3 === 0 )&&( i % 5 === 0)){
-       console.log("Fizzbuzz")
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log("Fizzbuzz")
     }
-  else  if (i % 3 === 0) {
-         console.log("fizz")
+    else if (i % 3 === 0) {
+        console.log("fizz")
     }
-     else if (i % 5 === 0){
-       console.log("buzz")
-     }
+    else if (i % 5 === 0) {
+        console.log("buzz")
+    }
 
-     else{
+    else {
         console.log(i)
-     }
-   
+    }
+
 
 }
+
+
+// test  Question no 2: You are given an inventory array,
+//  where each element is an object representing an item.
+// Write a loop that searches for an item with the id of 203.
+
+// If found, log the message: 
+// "Item Found: [Item Name] - Price: $[Item Price]".
+// If not found after checking all items, log: "Item with ID 203 
+// not found in inventory."
+
+const inventory = [
+    { id: 201, name: "Laptop", price: 1200 },
+    { id: 202, name: "Mouse", price: 25 },
+    { id: 203, name: "Keyboard", price: 75 },
+    { id: 204, name: "Monitor", price: 300 }
+];
+
+const targetId = 203;
+let itemFound = false; // Initialize the flag
+
+for (const item of inventory) {
+    if (item.id === targetId) {
+        console.log(`"item found ${item.name} - price ${item.price} ."`)
+        itemFound = true;
+    }
+}
+if (itemFound = false) {
+    console.log(`item with id[${targetId}] not found in the inventory`)
+}
+
+
+
+
+
+
 
 
 
